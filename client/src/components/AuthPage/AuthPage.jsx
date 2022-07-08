@@ -41,9 +41,10 @@ function AuthPage() {
 
   return (
     <div className={style.auth} >
-      <h2 style={{color:"green", margin:"10px", marginLeft:"300px"}}>Войти</h2>
+      <h2 style={{color:"green", margin:"10px", margin:"auto"}}>Войти</h2>
+      <p></p>
       <form onSubmit={submitHandler}  >
-        <div className="card" style={{ width: '18rem' , marginLeft:"140px", width:"400px"}}>
+        <div className="card" style={{ width: '18rem' , margin:"auto", width:"400px"}}>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
               <div className="mb-3">

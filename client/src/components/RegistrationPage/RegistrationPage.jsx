@@ -8,7 +8,7 @@ import style from "./style.module.css"
 import { useNavigate } from 'react-router-dom'
 
 
-const wordRoles = ['Клиент','Экспедитор','Админ']
+const wordRoles = ['Клиент','Экспедитор']
 function RegistrationPage() {
   const [inputs, setInputs] = useState({name:'', email:'', phone:'', password:'',roleId:1})
 
@@ -29,7 +29,8 @@ dispatch(getRoles())
 }, [])
 
 
-
+console.log(wordRoles)
+console.log(roles)
 
 const submitHandler = (e) => {
   e.preventDefault()
@@ -43,9 +44,10 @@ navigate('/')
 
   return (
     <div className={style.registration}>
-      <h2 style={{color:"green", margin:"10px", marginLeft:"200px"}}>Зарегистрироваться</h2>
+      <h2 style={{color:"green", margin:"10px", margin:"auto"}}>Зарегистрироваться</h2>
+      <p></p>
       <form onSubmit={submitHandler}>
-        <div className="card" style={{ width: '18rem' , marginLeft:"140px", width:"400px"}}>
+        <div className="card" style={{ width: '18rem' , margin:"auto", width:"400px"}}>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
               <div className="mb-3">
@@ -72,6 +74,7 @@ navigate('/')
                 <input type="password" onChange={inputHandler} value={inputs.password} name="password" className="form-control" id="exampleInputPassword1" />
               </div>
             </div>
+            {/* <p></p> */}
             <div>
               <select className="form-select" name='roleId' onChange={inputHandler} value={inputs.roleId} aria-label="Default select example">
                 {roles.map(el => <option  value={el.role}>{wordRoles[el.role-1]}</option>)}

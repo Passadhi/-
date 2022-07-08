@@ -80,10 +80,10 @@ const handleSubmit = (e) => {
       inputDateFrom={inputDateFrom} setInputDateTo={setInputDateTo}
        />
        <div className={style.orderbutton}>
-      <button type="button" style={{borderRadius:"25px",height:"50px", width:"600px",marginLeft:"630px",fontSize:"25px"}} className="btn btn-success">Расчитать</button>
+      <button type="button" style={{borderRadius:"25px",height:"50px", width:"600px",fontSize:"25px"}} className="btn btn-success">Расчитать</button>
       {/* <h4>Будет сумма</h4> */}
       <br/>
-      <button type="button" type="submit"  style={{borderRadius:"25px",height:"50px",width:"600px", marginLeft:"630px",fontSize:"25px"}} className="btn btn-warning">Создать</button>
+      <button type="button" type="submit"  style={{borderRadius:"25px",height:"50px",width:"600px",fontSize:"25px"}} className="btn btn-warning">Создать</button>
       </div>
       </form>
 

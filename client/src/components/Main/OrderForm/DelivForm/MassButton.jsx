@@ -17,7 +17,7 @@ const MassButton = ({inputMass,setInputMass}) => {
 
 <div>
 <p>
-  <button style={{width:"300px", borderRadius:"25px",height:"50px" , marginLeft:"630px",width:"600px", fontSize:"25px"}} className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamples" aria-expanded="false" aria-controls="collapseExamples">
+  <button style={{width:"300px", borderRadius:"25px",height:"50px" ,width:"600px", fontSize:"25px"}} className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamples" aria-expanded="false" aria-controls="collapseExamples">
     Масса
   </button>
 </p>
@@ -27,7 +27,7 @@ const MassButton = ({inputMass,setInputMass}) => {
   <div className="card card-body"  >
 
 
-    <input placeholder="kg..." style={{width: '200px',marginLeft: '45%' }} 
+    <input placeholder="kg..." style={{width: '200px',margin: 'auto'}} 
     onChange={handleCreatingMass} value ={inputMass} />
 
 

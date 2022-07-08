@@ -27,7 +27,7 @@ const handleCreatingDepWidth = (e) => {
     <>
 <div className={style.sizebutton}> 
 <p>
-  <button style={{width:"300px" ,borderRadius:"25px",height:"50px", marginLeft:"630px",width:"600px",fontSize:"25px"}} className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#sizeButton" aria-expanded="false" aria-controls="sizeButton">
+  <button style={{width:"300px" ,borderRadius:"25px",height:"50px",width:"600px",fontSize:"25px"}} className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#sizeButton" aria-expanded="false" aria-controls="sizeButton">
     Размеры
   </button>
 </p>
@@ -36,11 +36,11 @@ const handleCreatingDepWidth = (e) => {
   <div className="card card-body"  >
 
 
-    <input placeholder="высота..." style={{width: '200px',marginLeft: '45%' }}
+    <input placeholder="высота...м" style={{width: '200px',margin: 'auto' }}
       onChange={handleCreatingDepHeight} value ={inputHeight} />
-    <input placeholder="ширина..." style={{width: '200px',marginLeft: '45%' }} 
+    <input placeholder="ширина...м" style={{width: '200px',margin: 'auto' }} 
     onChange={handleCreatingDepLength} value ={inputLength} />
-    <input placeholder="ширина..." style={{width: '200px',marginLeft: '45%' }}
+    <input placeholder="ширина...м" style={{width: '200px',margin: 'auto' }}
     onChange={handleCreatingDepWidth} value ={inputWidth}  />
 
 

@@ -6,6 +6,7 @@ import { getOneUserFromServer } from '../../redux/ac/userAC'
 import { useEffect } from 'react'
 import { userLogout } from '../../redux/ac/userAC'
 import { Navigate, useNavigate } from 'react-router-dom'
+// import vezu from '../../../server/public/img/vezu.png'
 
 const navigate = useNavigate
 const HeaderClient = () => {
@@ -25,12 +26,11 @@ const clickOut = ()  => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div style={{backgroundColor:"	darkseagreen", height:"60px" , fontSize:"20px"}} className="container-fluid">
+      <div style={{backgroundColor:"#339966", height:"100px" , fontSize:"25px"}} className="container-fluid">
         {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button> */}
 <div>
-  <img src="http://localhost:3032/public/img/logo.jpg"/>
 </div>
 
 

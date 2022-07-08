@@ -150,9 +150,11 @@ console.log(routePanelControl)
   return (
 
     <>
-    <h2 style={{ color: "green", marginLeft: "850px", marginBottom:"40px", marginTop:"40px", fontWeight:"bolder"}}>
-      PRIVEZOO
+    <h2 style={{ color: "darkgreen", margin: "850px", marginBottom:"40px", marginTop:"40px", fontWeight:"bolder"}}>
+    <img src="https://ia.wampi.ru/2022/06/13/SNIMOK-EKRANA-2022-06-13-V-14.21.49.webp"  style={{height:"200px",marginLeft:'auto'}}  />
     </h2>
+    
+    
 
 <div className={style.delivform}>
   

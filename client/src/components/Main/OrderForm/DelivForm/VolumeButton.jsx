@@ -18,7 +18,7 @@ const VolumeButton = ({inputVol, setInputVol}) => {
 
  
 <p>
-  <button style={{marginLeft:"630px", borderRadius:"25px",height:"50px",width:"600px",fontSize:"25px"}} className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#volumeButton" aria-expanded="false" aria-controls="volumeButton">
+  <button style={{ borderRadius:"25px",height:"50px",width:"600px",fontSize:"25px"}} className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#volumeButton" aria-expanded="false" aria-controls="volumeButton">
     Объём
   </button>
 </p>
@@ -27,8 +27,8 @@ const VolumeButton = ({inputVol, setInputVol}) => {
   <div className="card card-body"  >
 
 
-  <div><input placeholder="0.1" style={{width: '200px',marginLeft: '45%' }} 
-  onChange={handleCreatingVol} value ={inputVol} /> m3</div>
+  <div><input placeholder="0.1 м3" style={{width: '200px',marginLeft: '45%' }} 
+  onChange={handleCreatingVol} value ={inputVol} /> </div>
 
 
   
@@ -36,8 +36,8 @@ const VolumeButton = ({inputVol, setInputVol}) => {
 {/* </div> */}
       
     {/* </div> */}
-    // </div>
-    // </div>
+     </div>
+     </div>
 </>
   )
 }

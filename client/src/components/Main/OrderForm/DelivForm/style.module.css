@@ -1,13 +1,19 @@
 .mapbutton{
   margin:auto;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .massbutton{
- margin: auto;
- display: flex;
- flex-direction:column ;
- justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+
+ 
+ 
+ 
 }
 
 
@@ -16,24 +22,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  justify-content: center;
  }
 
 
  .volumebutton{
-  /* display: flex; */
-  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  }
 
 
- /* .dateform{
+ .dateform{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  
- } */
+ align-items: center;
+ }
 
 .delivform{
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;;
+  align-items: center;
+  justify-content: center;
 }

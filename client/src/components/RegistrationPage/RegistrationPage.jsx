@@ -8,7 +8,7 @@ import style from "./style.module.css"
 import { useNavigate } from 'react-router-dom'
 
 
-const wordRoles = ['Клиент','Экспедитор']
+const wordRoles = ['Клиент','Экспедитор', 'Админ']
 function RegistrationPage() {
   const [inputs, setInputs] = useState({name:'', email:'', phone:'', password:'',roleId:1})
 

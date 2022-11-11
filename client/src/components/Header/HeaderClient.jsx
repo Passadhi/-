@@ -47,7 +47,7 @@ const clickOut = ()  => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup" style={{ justifyContent: 'flex-end' }}>
               <div className="navbar-nav">
                 <a style={{color: "white"}} className="nav-link active" aria-current="/" href="/">Главная</a>
-                <a style={{color: "white"}} className="nav-link" href="/driver">Найти заказ</a>
+                <a style={{color: "white"}} className="nav-link" href="/driver">Личный кабинет</a>
                 <a style={{color: "white"}} className="nav-link" href="/ActiveOrders">Найти заказ</a>
                 <a style={{color: "white"}} className="nav-link" onClick={clickOut} href="/">Выход</a>
               </div>

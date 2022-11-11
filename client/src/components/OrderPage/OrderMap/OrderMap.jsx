@@ -2,7 +2,7 @@
 
 
 import yaMap from "./ymap";
-import React, { useEffect } from "react";
+import React, { useEffect, } from "react";
 import { useSelector,useDispatch } from 'react-redux' 
 import { getOneOrderFromServer } from "../../../redux/ac/orderActions";
 import { useParams } from 'react-router-dom'

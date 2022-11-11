@@ -1,3 +1,4 @@
+require ('dotenv').config()
 const express = require("express");
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const cors = require("cors");
-const PORT = 3032;
+const PORT = process.env.PORT
 const { Order } = require("./db/models");
 const {User} = require("./db/models")
 const morgan = require("morgan");
@@ -46,7 +47,8 @@ app.use(
 
     store: new FileStore({}),
     saveUninitialized: false,
-    secret: "dsmkalmdkl",
+    secret: process.env.secret,
+    cookie: {secure: true},
     resave: false,
   })
 );
@@ -213,6 +215,6 @@ io.on("connection", (socket) => {
 });
 
 
-app.listen(PORT, () => {
-  console.log(`server started PORT: ${PORT}`);
+app.listen(process.env.PORT ?? 3032, () => {
+  console.log(`server started PORT: ${process.env.PORT}`);
 });

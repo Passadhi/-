@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from "react";
-import { useEffect, } from "react";
+import { useEffect,useMemo } from "react";
 import yaMap from "./OrderMap/ymap";
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -66,7 +66,7 @@ function AllOrdersMap({ allOrders }) {
 
   // if (!allOrders.length) return null
 
-  function init() {
+  function init  ()  {
 
 
     var myMap = new ymaps.Map("map", {
@@ -132,7 +132,7 @@ function AllOrdersMap({ allOrders }) {
       }
     }
   }
-
+  
   // if (!allOrders?.activeOrders) return null
 
   // console.log('aaaa',allOrders.activeOrders[0].latitude)

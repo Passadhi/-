@@ -59,7 +59,7 @@ app.post('/uploadIMG', upload.single('file'), async (req, res) => {
   console.log(req.session)
 
   try {
-    console.log(req?.file?.originalname);
+    //console.log(req?.file?.originalname);
     const post = await User.update({ img: `img/${req?.file?.originalname}`, }, {
       where: { id: req.session.user.id }
     });

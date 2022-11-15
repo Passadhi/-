@@ -21,7 +21,7 @@ export const getUserAuth = ( data) => {
 
 
 export const getUserAuthFromServer = () => async (dispatch) =>{
-  const authUser = await axios.get(`http://localhost:3032/user`)
+  const authUser = await axios.get(`http://84.252.143.166:3032/user`)
   // console.log('===============>>>>>>>666', authUser.data)
   dispatch(getUserAuth(authUser.data))
 }

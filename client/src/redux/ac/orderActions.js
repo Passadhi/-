@@ -24,7 +24,7 @@ export const addOrderDb= (inputVol, inputWidth,
         status:false
     }
     console.log(newOrder)
-  const response = await axios.post("http://localhost:3032/upload", newOrder);
+  const response = await axios.post("http://84.252.143.166:3032/upload", newOrder);
   console.log('2')
   dispatch2(addOrder(response.data));
 };

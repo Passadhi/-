@@ -47,8 +47,8 @@ app.use(
 
     store: new FileStore({}),
     saveUninitialized: false,
-    secret: process.env.secret,
-    cookie: {secure: true},
+    secret: 'dsmkalmdkl',
+    //cookie: {secure: true},
     resave: false,
   })
 );

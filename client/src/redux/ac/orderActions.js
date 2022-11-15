@@ -37,7 +37,7 @@ export const getOneOrder = (order) => ({
   
   export const getOneOrderFromServer = (id) => async(dispatch) => {
     console.log('ia rabotaiu')
-      const response = await axios(`http://localhost:3032/orders/${id}`)
+      const response = await axios(`http://84.252.143.166:3032/orders/${id}`)
   console.log('=======================>1',response.data)
   dispatch(getOneOrder(response.data))
   
@@ -50,7 +50,7 @@ export const getOneOrder = (order) => ({
   });
   
   export const getAllActiveOrdersFromServer = () => 
-  async(dispatch) => {const response = await axios("http://localhost:3032/activeOrders")
+  async(dispatch) => {const response = await axios("http://84.252.143.166:3032/activeOrders")
   console.log('response',response.data)
   dispatch(getAllActiveOrders(response.data))
   
@@ -62,7 +62,7 @@ export const getOneOrder = (order) => ({
   });
   
   export const getClientOrdersFromServer = () => 
-  async(dispatch) => {const response = await axios("http://localhost:3032/clientOrders")
+  async(dispatch) => {const response = await axios("http://84.252.143.166:3032/clientOrders")
   console.log('!!!!!!!!!!!!!!!',response.data)
   dispatch(getClientOrders(response.data))
   
@@ -74,7 +74,7 @@ export const getOneOrder = (order) => ({
   });
   
   export const getDriverOrdersFromServer = () => 
-  async(dispatch) => {const response = await axios("http://localhost:3032/driverOrders")
+  async(dispatch) => {const response = await axios("http://84.252.143.166:3032/driverOrders")
   console.log('!!!!!!!!!!!!!!!',response.data)
   dispatch(getDriverOrders(response.data))
   
@@ -88,7 +88,7 @@ export const getOneOrder = (order) => ({
 
 
   export const changeStatusDb=(id)=> async (dispatch) => {
-   await axios.patch (`http://localhost:3032/changeStatus/${id}`) 
+   await axios.patch (`http://84.252.143.166:3032/changeStatus/${id}`) 
   dispatch(changeStatus(id))
   }
 

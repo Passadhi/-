@@ -7,7 +7,7 @@ import {store} from './redux/store'
 import axios from 'axios'
 import { BrowserRouter } from 'react-router-dom';
 
-axios.defaults.baseURL = 'http://localhost:3032'
+axios.defaults.baseURL = 'http://84.252.143.166:3032'
 axios.defaults.withCredentials = true
 
 // import reportWebVitals from './reportWebVitals';

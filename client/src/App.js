@@ -18,12 +18,12 @@ import RegistrationPage from './components/RegistrationPage/RegistrationPage';
 import AllOrdersPage from './components/AllOrdersPage/AllOrdersPage';
 import Chat from './components/Chat/Chat';
 import { io } from 'socket.io-client'
-// const et = io.connect("http://localhost:3032")
+// const et = io.connect("http://84.252.143.166:3032")
 
 import { useDispatch } from 'react-redux';
 import { checkUser } from './redux/ac/userAC';
 import { useEffect } from 'react';
-const socket = io.connect("http://localhost:3033")
+const socket = io.connect("http://84.252.143.166:3033")
 
 
 

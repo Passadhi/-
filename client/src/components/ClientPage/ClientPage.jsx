@@ -102,7 +102,7 @@ const ClientPage = () => {
             <div className='col'>
               <div class="card" >
                 {currentUser.img && imgSrc.length === 0 ?
-                  <img style={{ borderRadius: "55px", width: "200px", height: "200px" }} src={`http://84.252.143.166:3032/${currentUser.img}`} class="card-img-top" alt="..." /> :
+                  <img style={{ borderRadius: "55px", width: "200px", height: "200px" }} src={`http://130.193.52.245:3032/${currentUser.img}`} class="card-img-top" alt="..." /> :
                   <img style={{ borderRadius: "55px", width: "200px", }} src={imgSrc} class="card-img-top" alt="..." />
                 }
                 <div class="card-body">

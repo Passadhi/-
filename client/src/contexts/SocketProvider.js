@@ -12,7 +12,7 @@ export function SocketProvider({ id, children }) {
 
   useEffect(() => {
     const newSocket = io(
-      'http://84.252.143.166:3033',
+      'http://130.193.52.245:3033',
       { query: { id } }
     )
     setSocket(newSocket)

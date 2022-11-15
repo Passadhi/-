@@ -36,7 +36,7 @@ const { Client } = require("pg");
 app.use(cors(
   {
     credentials: true,
-    origin: 'http://84.252.143.166:3000',
+    origin: 'http://130.193.52.245:3000',
   }
 ));
 
@@ -191,7 +191,7 @@ app.get("/driverOrders", async (req, res) => {
 
 const io = require("socket.io")(3041, {
   cors: {
-    origin: "http://84.252.143.166:3000",
+    origin: "http://130.193.52.245:3000",
     methods: ["GET", "POST"],
     credentials: true,
   },
